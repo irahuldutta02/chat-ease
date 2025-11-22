@@ -3,7 +3,7 @@ import axios from "axios";
 import mongoose from "mongoose";
 import { ENV } from "../lib/env.js";
 
-const job = new cron.CronJob("* * * * * *", async function () {
+const job = new cron.CronJob("*/5 * * * *", async function () {
   try {
     const res = await axios.get(ENV.CLIENT_URL + "/api/check-health");
     if (res.status === 200) {

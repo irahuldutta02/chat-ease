@@ -2,7 +2,21 @@
 
 ![Preview](./docs/image.png)
 
-Highlights:
+---
+
+## 🧾 Test Accounts
+
+Use these dummy accounts to test the app (development/testing only):
+
+- **Email:** `chatease-temp-mail-1@yopmail.com`  
+  **Password:** `123456`
+
+- **Email:** `chatease-temp-mail-2@yopmail.com`  
+  **Password:** `123456`
+
+---
+
+## Highlights:
 
 - 🔐 Custom JWT Authentication (no 3rd-party auth)
 - ⚡ Real-time Messaging via Socket.io
@@ -64,3 +78,5 @@ cd frontend
 npm install
 npm run dev
 ```
+
+---

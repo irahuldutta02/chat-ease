@@ -10,18 +10,6 @@
 
 ---
 
-## 🧾 Test Accounts
-
-Use these dummy accounts for testing (development only):
-
-- **Email:** chatease-temp-mail-1@yopmail.com  
-  **Password:** 123456  
-
-- **Email:** chatease-temp-mail-2@yopmail.com  
-  **Password:** 123456  
-
----
-
 ## ✨ Features
 
 - 🔐 Custom JWT Authentication (no third-party auth)

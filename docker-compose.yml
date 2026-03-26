@@ -1,0 +1,37 @@
+services:
+  chatease-mongodb:
+    image: mongo:4.4
+    container_name: chatease-mongodb
+    restart: unless-stopped
+    command: [
+      "mongod",
+      "--bind_ip_all",
+      "--wiredTigerCacheSizeGB", "0.2"
+    ]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    volumes:
+      - chatease_mongo_data:/data/db
+    networks:
+      - chatease-network
+
+  chatease-app:
+    build: .
+    container_name: chatease-app
+    restart: unless-stopped
+    ports:
+      - "3004:3000"
+    env_file:
+      - backend/.env
+    depends_on:
+      - chatease-mongodb
+    networks:
+      - chatease-network
+
+volumes:
+  chatease_mongo_data:
+
+networks:
+  chatease-network:
+    external: true

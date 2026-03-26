@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 Live Demo (Hosted on Private VPS with custom domain)
+## 🌐 Live (Hosted on VPS with custom domain)
 
 🔗 https://chatease.rahultech.in
 
